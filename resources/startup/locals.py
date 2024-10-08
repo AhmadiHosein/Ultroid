@@ -30,6 +30,8 @@ def start():
     print("Cloning the repository...\n\n")
     os.system("rm -rf Ultroid")
     os.system("git clone https://github.com/TeamUltroid/Ultroid")
+    os.system("source venv/bin/activate")
+  
     print("\n\nDone")
     os.chdir("Ultroid")
     clear_screen()
