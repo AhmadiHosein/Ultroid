@@ -20,7 +20,7 @@ except ImportError:
 class Var:
     # mandatory
     API_ID = (
-        int(sys.argv[1]) if len(sys.argv) > 1 else config("API_ID", default=6, cast=int)
+        int(sys.argv[1]) if len(sys.argv) > 1 else config("API_ID", default=6)
     )
     API_HASH = (
         sys.argv[2]
@@ -38,12 +38,12 @@ class Var:
     )
     # extras
     BOT_TOKEN = config("BOT_TOKEN", default=None)
-    LOG_CHANNEL = config("LOG_CHANNEL", default=0, cast=int)
+    LOG_CHANNEL = config("LOG_CHANNEL", default=0)
     HEROKU_APP_NAME = config("HEROKU_APP_NAME", default=None)
     HEROKU_API = config("HEROKU_API", default=None)
     VC_SESSION = config("VC_SESSION", default=None)
-    ADDONS = config("ADDONS", default=False, cast=bool)
-    VCBOT = config("VCBOT", default=False, cast=bool)
+    ADDONS = config("ADDONS", default=False)
+    VCBOT = config("VCBOT", default=False)
     # for railway
     REDISPASSWORD = config("REDISPASSWORD", default=None)
     REDISHOST = config("REDISHOST", default=None)
